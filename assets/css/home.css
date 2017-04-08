@@ -71,6 +71,7 @@
 .home .index_page img.nessus {
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 .home .block_product_logo {
