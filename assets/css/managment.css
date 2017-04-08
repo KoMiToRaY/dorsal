@@ -1,0 +1,78 @@
+.managment .border-switch {
+  border: 3px solid #000;
+}
+
+.managment .one_color_switch {
+  font-weight: bold;
+}
+
+.managment .switch .ok {
+  color: green;
+}
+
+.managment .switch .not_ok {
+  color: red;
+}
+
+.managment .switch .col-3 {
+  padding: 0;
+}
+
+.managment .switch .col-12 {
+  padding: 0;
+}
+
+.managment .switch .number {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  text-align: center;
+  cursor: pointer;
+}
+
+.managment #switch_control.hidden {
+  display: none;
+}
+
+.managment #switch_control {
+  background-color: #F4B350;
+  color: #fff;
+  margin: auto;
+  margin-top: 1rem;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.managment .number-selected {
+  background-color: #fff;
+}
+
+.managment .fa-times {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.managment .tools-bloc {
+  background-color: #f1f1f1;
+}
+
+.managment .chaire {
+  background-color: #F8CBAD;
+}
+
+.managment .blue {
+  background-color: #B4C5E7;
+}
+
+.managment .yellow {
+  background-color: #FFE698;
+}
+
+.managment .green {
+  background-color: #C1F0E4;
+}
+
+.managment .purple {
+  background-color: #E4C3F0;
+}

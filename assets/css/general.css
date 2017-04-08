@@ -1,0 +1,111 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.vertical_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+	margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+aside {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+aside .title-menu {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+}
+
+aside .title-menu p {
+  margin-bottom: 0;
+}
+
+aside .liste-salles {
+  background-color: #f1f1f1;
+}
+
+aside .liste-salles  ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+aside .liste-salles ul li a {
+  color: #333 !important;
+}
+
+aside .liste-salles li:not(:last-child) {
+  border-bottom: 1px solid #a3a3a3;
+}
+
+aside .liste-salles li {
+  padding: 0.5rem 0rem;
+}
+
+aside .liste-salles li:hover {
+  border-color: ;
+}
+
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+}
+
+.color_white {
+  color: #fff;
+}
+
+.color_blue {
+  color: #3498db;
+}
+
+.color_bluedark {
+  color: #2980b9;
+}
+
+.img-responsive {
+  width: 100%;
+}

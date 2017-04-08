@@ -1,0 +1,95 @@
+.name-bloc {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+  width: 100%;
+}
+.carre {
+  height: 150px;
+  cursor: pointer;
+}
+.carre.blue {
+  background-color: #3498db;
+}
+.transition-float-bloc-top.blue:before {
+  background-color: #2980b9;
+}
+.carre.amethyst {
+  background-color: #9b59b6;
+}
+.transition-float-bloc-top.amethyst:before {
+  background-color: #8e44ad;
+}
+.carre.emerald {
+  background-color: #2ecc71;
+}
+.transition-float-bloc-top.emerald:before {
+  background-color: #27ae60;
+}
+.transition-float-bloc-top {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.transition-float-bloc-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.transition-float-bloc-top:hover:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.home .index_page img.nessus {
+  display: block;
+  margin: auto;
+}
+
+.home .block_product_logo {
+  background-color: #34495e;
+  border-top: 3px solid #2c3e50;
+  border-bottom: 3px solid #2c3e50;
+}
+
+.home .product_logo img {
+  width: 200px;
+}
+
+.home .block_product_logo a.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 0;
+}
+
+.home .block_product_logo a.btn:hover {
+  background-color: #fff;
+  color: #3498db;
+}

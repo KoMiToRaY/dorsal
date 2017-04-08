@@ -1,0 +1,47 @@
+header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid #2098D1;
+  padding: 0 20px;
+}
+header .nav-item {
+  text-align: center;
+}
+
+header .nav-item a {
+  height: 60px;
+  padding-top: 1rem;
+  color: #2098D1 !important;
+}
+
+header .nav-item a:hover {
+  color: #fff !important;
+}
+
+header .full-width {
+  width: 100%;
+}
+
+header .bg-faded {
+  background-color: #fff;
+  padding: 0;
+}
+
+header .dropdown-toggle {
+  cursor: pointer;
+}
+
+
+header .logo-entreprise {
+  height: 55px;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+header .logo span {
+  position: absolute;
+  bottom: -0.2rem;
+  font-size: 0.9rem;
+  left: -1%;
+  color: #333;
+}

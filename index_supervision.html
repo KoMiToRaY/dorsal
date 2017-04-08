@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Supervision</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+
+    <script src="assets/javascript/tether-1.3.3/src/js/utils.js"></script>
+    <script src="assets/javascript/tether-1.3.3/dist/js/tether.min.js"></script>
+    <script src="assets/javascript/jquery-3.1.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/javascript/include_files.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div id="side-menu" class="col-3"></div>
+        <main class="col-9">
+          <img class='img-responsive cartographie' src="assets/images/Cartographie.png">
+          <img class='terminal hidden' src="assets/images/terminal.jpg">
+        </main>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+
+<style>
+  .terminal.hidden {
+    display: none;
+  }
+
+  .terminal {
+    position: absolute;
+    top: 0;
+    margin: auto;
+  }
+
+</style>
+
+<script>
+  $(document).ready(function(){
+    console.log('test')
+    $('.cartographie').click( function() {
+      var terminal = $('.terminal');
+
+      if(terminal.hasClass('hidden')) {
+        $(terminal).addClass('show');
+        $(terminal).removeClass('hidden');
+      } else {
+        $(terminal).addClass('hidden');
+        $(terminal).removeClass('show');
+      }
+    });
+  });
+</script>
