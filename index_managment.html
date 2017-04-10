@@ -145,9 +145,18 @@
                   <i class="fa fa-times" aria-hidden="true" onclick="closeMenu()"></i>
                   <p onclick="close()">controle switch</p>
                   <button class='on_off' >On / Off</button>
-                  <button>Change VLAN</button>
+                  <button class='showParamtre'>Change VLAN</button>
                   <button>Débit</button>
                   <button>Négociation</button>
+                  <div class='row'>
+                    <div class='showParam hidden col-12'>
+                      <button>LAN</button>
+                      <button>Wifi</button>
+                      <button>Imprimante</button>
+                      <button>DFZ</button>
+                      <button>Inter-connexion</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -576,12 +585,14 @@
     background-color: #E4C3F0;
   }
 
-
+  .hidden {
+    display: none;
+  }
 </style>
 <script>
   $(document).ready(function(){
-    var switch_control = $('#switch_control');
-    var switch_number;
+    var switch_control = $('#switch_control')
+    var switch_number
     $('.number').click(function() {
 
       switch_number = $(this)
@@ -614,14 +625,26 @@
       // si menu ouvert on le cache
       }
     });
+
+    var param = $('.showParam')
+    $('.showParamtre').click(function() {
+      console.log('ok')
+      if(param.hasClass('hidden')) {
+        console.log('ok1')
+        param.removeClass('hidden')
+      } else {
+        console.log('ok2')
+        param.addClass('hidden')
+      }
+    });
   });
 
   function closeMenu() {
     console.log("call function close")
-    var switch_control = $('#switch_control');
+    var switch_control = $('#switch_control')
     if(switch_control.hasClass('active')) {
-      switch_control.removeClass('active');
-      switch_control.addClass('hidden');
+      switch_control.removeClass('active')
+      switch_control.addClass('hidden')
       $('.number').removeClass('number-selected')
     }
   }
